@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,32 +8,47 @@
 	<title>Обухов Дмитрий - инженер-программист</title>
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-	<header>
-		<div>
-			<nav>
-				<span>Живу, чтобы создавать!</span>
-				<ul>
-					<li><a href="">Главная</a></li>
-					<li><a href="">Обо мне</a></li>
-					<li><a href="">Навыки</a></li>
-					<li><a href="">Портфолио</a></li>
-					<li><a href="">Хобби</a></li>
-					<li><a href="">Контакты</a></li>
+
+<body class="wrapper">
+	<header class="header container">
+		<div class="navigation">
+			<img class="" src="assets/photo/icon_main.svg" alt="На главную">
+			<nav class="nav">
+				<ul class="nav-items">
+					<li class="nav-item"><a class="nav-items_link" href="">Обо мне</a></li>
+					<li class="nav-item"><a class="nav-items_link" href="">Навыки</a></li>
+					<li class="nav-item"><a class="nav-items_link" href="">1C</a></li>
+					<li class="nav-item"><a class="nav-items_link" href="">Веб-сайты</a></li>
+					<li class="nav-item"><a class="nav-items_link" href="">Хобби</a></li>
+					<li class="nav-item"><a class="nav-items_link" href="">Контакты</a></li>
 				</ul>
 			</nav>
-			<button>Написать мне</button>
+			<div class="btn-wrapper">
+				<button class="btn">Написать мне</button>
+			</div>
 		</div>
-		<div>
-			<h1>Привет, меня зовут Дима!</h1>
-			<p>Я инженер-программист и это моё портфолио</p>
+		<div class="header_about">
+			<div class="header_about-body">
+				<p class="header_about-title">Привет, меня зовут <span
+						class="header_about-title__color header_about-title__underline">Дима Обухов!</span><img
+						src="assets/photo/heand.png" width="50" alt=""></p>
+				<h1 class="header_about-description">1C Программист & Back-end разработчик</h1>
+				<div class="header_about-photo-wrapper">
+					<img class="header_about-photo" src="assets/photo/me.jpg" width="350px" alt="Это Я">
+				</div>
+				<span class="title">Живу, чтобы создавать!</span>
+			</div>
 		</div>
 	</header>
 
 
 
 
-<script src="assets/js/main.js"></script>	
+	<script src="assets/js/main.js"></script>
 </body>
+
 </html>
