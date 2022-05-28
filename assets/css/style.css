@@ -268,6 +268,7 @@ p {
 
 .about-me {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	margin-top: 145px;
 }
@@ -275,7 +276,9 @@ p {
 .about-me_photo {
 	width: 500px;
 	box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
-
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
 }
 
 .about-me_photo:hover {
@@ -283,6 +286,9 @@ p {
 	filter: grayscale(100%) contrast(120%);
 	display: block;
 	transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
 }
 
 
@@ -314,4 +320,83 @@ p {
 
 .about-me_subtitle {
 	font-size: 4.8rem;
+}
+
+.skills {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 60px;
+}
+
+.skills_description {
+
+	max-width: 670px;
+}
+
+.skills_images {
+	max-width: 580px;
+}
+
+.skills_description_title {
+	display: flex;
+	width: 80px;
+	padding: 10px;
+	font-size: 2rem;
+	color: #FFB742;
+	background-color:rgba(255, 255, 255, 0.08);
+	border-radius: 50px;
+}
+
+.skills_description_subtitle {
+	font-size: 4.8rem;
+	font-weight: normal;
+}
+
+.skills_description_more {
+	font-size: 1.6rem;
+	line-height: 3rem;
+	padding-top: 40px;
+	padding-bottom: 60px;
+}
+
+.skills_images {
+	display: flex;
+	flex-direction: column;
+	margin-top: 140px;
+}
+
+.skills-block {
+	display: flex;
+	padding-bottom: 20px;
+}
+
+.skills_img-bg {
+	background: #383E45;
+	border-radius: 10px;
+	padding: 15px;
+	margin-right: 20px;
+}
+
+.skills_img-bg:hover {
+	
+}
+
+.skills_img-img {
+	
+}
+
+.skills-block__position {
+	align-self: center;
+}
+
+@media (max-width: 1322px) {
+	.skills_description {
+		margin: 0 auto;
+		margin-bottom: 40px;
+	}
+
+	.skills_images {
+		margin: 0 auto;
+	}
 }

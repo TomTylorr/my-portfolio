@@ -15,12 +15,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 let letter = 0;
-const name2 = "Дима!";
+const name2 = "Дмитрий!";
 function typeText2() {
 	if (letter < name2.length) {
 		document.getElementById("header_about-title__underline-js").innerHTML += name2.charAt(letter);
 		letter++;
-		let speed = Math.floor(Math.random() * 1500) + 50;
+		let speed = Math.floor(Math.random() * 1000) + 50;
 		setTimeout(typeText2, speed);
 	}
 }
