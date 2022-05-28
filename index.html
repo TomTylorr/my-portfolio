@@ -15,57 +15,86 @@
 
 <body class="wrapper">
 	<header class="header container">
-		<video autoplay muted loop id="myVideo">
+		<!-- <video autoplay muted loop id="myVideo">
 			<source src="assets/video/computer2_small.mp4" type="video/mp4">
 			Your browser does not support HTML5 video.
-		</video>
+		</video> -->
 		<div class="navigation">
 			<img class="" src="assets/photo/icon_main.svg" alt="На главную">
-			<nav class="nav">
+			<div class="nav-wrapper">
 				<ul class="nav-items">
-					<li class="nav-item"><a class="nav-items_link" href="">Обо мне</a></li>
+					<li class="nav-item"><a class="nav-items_link" href="#about-me">Обо мне</a></li>
 					<li class="nav-item"><a class="nav-items_link" href="">Навыки</a></li>
-					<li class="nav-item"><a class="nav-items_link" href="">1C</a></li>
-					<li class="nav-item"><a class="nav-items_link" href="">Веб-сайты</a></li>
+					<li class="nav-item"><a class="nav-items_link" href="">1C-блог</a></li>
 					<li class="nav-item"><a class="nav-items_link" href="">Хобби</a></li>
-					<li class="nav-item"><a class="nav-items_link" href="">Контакты</a></li>
 				</ul>
-			</nav>
-			<div class="btn-wrapper">
-				<button class="btn">Написать мне</button>
+				</nav>
+				<p class="phone-number">+375 (44) 700-66-93 <span class="phone-number-icon"></span></p>
 			</div>
+			<nav class="nav">
+
+				<div class="btn-wrapper">
+					<button class="btn">Написать мне</button>
+				</div>
 		</div>
 		<div class="header_about">
 			<div class="header_about-body">
-				<p class="header_about-title">Привет, меня зовут <span
-						class="header_about-title__color header_about-title__underline">Дима Обухов!</span><img
-						src="assets/photo/heand.png" width="50" alt=""></p>
-				<h1 class="header_about-description">1C Программист & Back-end разработчик</h1>
+				<div class="header_about-body-name">
+					<p class="header_about-title header_about-title-js" id="header_about-title-js"></p>
+					<span>&nbsp; &nbsp; &nbsp; </span>
+					<p class="header_about-title__color header_about-title__underline"
+						id="header_about-title__underline-js"></p>
+					<img src="assets/photo/heand.png" width="50" alt="">
+				</div>
+				<p class="header_about-letter">{ Я }</p>
+				<h1 class="header_about-description" id="header_about-description">1C-Программист</h1>
 				<div class="header_about-photo-wrapper">
-					<img class="header_about-photo" src="assets/photo/me.jpg" width="340px" alt="Это Я">
+					<img class="header_about-photo" src="assets/photo/main_gif.gif" width="340px" alt="Это Я">
 				</div>
 				<span class="title">Живу, чтобы создавать!</span>
 			</div>
 		</div>
 	</header>
 
-	<main class="container container-social-media">
-		<div class="social-media">
-			<a class="social-media_link" href="https://www.instagram.com/tom.tylor/" target="_blank">
-				<img class="social-media_img" src="assets/photo/instagram.png" width="60" alt="instagram">
-			</a>
-			<a class="social-media_link" href="https://www.linkedin.com/in/tomtylorr/" target="_blank">
-				<img class="social-media_img" src="assets/photo//linkedin.png" width="60" alt="linkedin">
-			</a>
-			<a class="social-media_link" href="https://t.me/TomTylorr" target="_blank">
-				<img class="social-media_img" src="assets/photo//telegram.png" width="60" alt="telegram">
-			</a>
-			<a class="social-media_link" href="https://vk.com/iamdimaobukhov" target="_blank">
-				<img class="social-media_img" src="assets/photo/vk.png" width="60" alt="vk">
-			</a>
-			<a class="social-media_link" href="https://github.com/TomTylorr" target="_blank">
-				<img class="social-media_img" src="assets/photo/github.png" width="60" alt="github">
-			</a>
+	<main class="container">
+		<div class="container-social-media">
+			<div class="social-media">
+				<a class="social-media_link" href="https://www.instagram.com/tom.tylor/" target="_blank">
+					<img class="social-media_img" src="assets/photo/instagram.png" width="60" alt="instagram">
+				</a>
+				<a class="social-media_link" href="https://www.linkedin.com/in/tomtylorr/" target="_blank">
+					<img class="social-media_img" src="assets/photo//linkedin.png" width="60" alt="linkedin">
+				</a>
+				<a class="social-media_link" href="https://t.me/TomTylorr" target="_blank">
+					<img class="social-media_img" src="assets/photo//telegram.png" width="60" alt="telegram">
+				</a>
+				<a class="social-media_link" href="https://vk.com/iamdimaobukhov" target="_blank">
+					<img class="social-media_img" src="assets/photo/vk.png" width="60" alt="vk">
+				</a>
+				<a class="social-media_link" href="https://github.com/TomTylorr" target="_blank">
+					<img class="social-media_img" src="assets/photo/github.png" width="60" alt="github">
+				</a>
+			</div>
+		</div>
+
+		<div class="about-me" id="about-me">
+			<img class="about-me_photo" src="assets/photo/me2.png" alt="Я">
+			<div class="about-me_description">
+				<h2 class="about-me_title">Кто Я</h2>
+				<p class="about-me_subtitle">Обо мне</p>
+				<p class="about-me_text">Меня зовут Дима. Мне 30 лет. Я инженер-программист 1С. Проживаюс в г.Лида, РБ.
+					В настоящее время трудовую деятельность осуществляю  в своем городе. Компания, занимается розничной и оптовой
+					продажей
+					электротехнической продукции.
+					Я работаю над доработкой 1С 8.3 Управление Торговлей редакции 10.4 обычное приложение.
+					Пишу  обработки на загрузку прайсов от поставщиков в 1С, также исправляю и улучшаю
+					функционал в общем, чтобы он был максимально удобен пользователю!
+				</p>
+				<div class="btn-wrapper">
+					<button class="btn">Написать мне</button>
+				</div>
+			</div>
+
 		</div>
 	</main>
 
