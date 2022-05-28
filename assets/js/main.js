@@ -20,7 +20,7 @@ function typeText2() {
 	if (letter < name2.length) {
 		document.getElementById("header_about-title__underline-js").innerHTML += name2.charAt(letter);
 		letter++;
-		let speed = Math.floor(Math.random() * 1000) + 50;
+		let speed = Math.floor(Math.random() * 600) + 50;
 		setTimeout(typeText2, speed);
 	}
 }
