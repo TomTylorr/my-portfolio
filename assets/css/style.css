@@ -594,8 +594,12 @@ p {
 	.skills_img-img {
 	}
 
+	.header_about {
+		width: 100%;
+	}
+
 	.header_about-description {
-		font-size: 3.2rem;
+		font-size: 2.6rem;
 	}
 
 	.header_about-title-js {
@@ -605,6 +609,58 @@ p {
 		padding-bottom: 20px;
 	}
 
+	.tabs {
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+	}
 
+	.tab {
+		margin: 0 auto;
+		padding-bottom: 40px;
+	}
 
+	.my-works_videos-wrapper {
+		padding-top: 0;
+	}
+
+	.skills_description_subtitle {
+		font-size: 2.8rem;
+	}
+
+	.skills_description_more {
+		margin: 0 auto;
+		padding: 15px 0;
+	}
+
+	.skills_description_more {
+		text-align: center;
+	}
+}
+
+@media (max-width: 400px) {
+	.container {
+		padding: 0 10px;
+	}
+
+	.my-works {
+		padding-top: 0;
+	}
+
+	.my-works_video-wrappper {
+		max-width: 100%;
+	}
+
+	.skills_img-bg {
+		margin-right: 0;
+	}
+
+	.about-me_text {
+		padding: 0 25px;
+		font-size: 1.4rem
+	}
+
+	.nav-item {
+		padding-right: 0;
+	}
 }
