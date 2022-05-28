@@ -19,7 +19,7 @@
 			<source src="assets/video/computer2_small.mp4" type="video/mp4">
 			Your browser does not support HTML5 video.
 		</video> -->
-		<div class="navigation">
+		<nav class="navigation">
 			<img class="" src="assets/photo/icon_main.svg" alt="На главную">
 			<div class="nav-wrapper">
 				<ul class="nav-items">
@@ -28,15 +28,13 @@
 					<li class="nav-item"><a class="nav-items_link" href="">1C-блог</a></li>
 					<li class="nav-item"><a class="nav-items_link" href="">Мои работы</a></li>
 				</ul>
-				</nav>
+				
 				<p class="phone-number">+375 (44) 700-66-93 <span class="phone-number-icon"></span></p>
 			</div>
-			<nav class="nav">
-
-				<div class="btn-wrapper">
+				<div class="btn-wrapper btn-wrapper-header">
 					<button class="btn">Написать мне</button>
 				</div>
-		</div>
+		</nav>
 		<div class="header_about">
 			<div class="header_about-body">
 				<div class="header_about-body-name">
@@ -82,12 +80,14 @@
 			<div class="about-me_description">
 				<h2 class="about-me_title">Кто Я</h2>
 				<p class="about-me_subtitle">Обо мне</p>
-				<p class="about-me_text">Меня зовут Дмитрий. Мне 30 лет. Я инженер-программист 1С. Проживаюс в г.Лида, РБ.
-					В настоящее время трудовую деятельность осуществляю  в своем городе. Компания, занимается розничной и оптовой
+				<p class="about-me_text">Меня зовут Дмитрий. Мне 30 лет. Я инженер-программист 1С. Проживаюс в г.Лида,
+					РБ.
+					В настоящее время трудовую деятельность осуществляю в своем городе. Компания, занимается розничной и
+					оптовой
 					продажей
 					электротехнической продукции.
 					Я работаю над доработкой 1С 8.3 Управление Торговлей редакции 10.4 обычное приложение.
-					Пишу  обработки на загрузку прайсов от поставщиков в 1С, также исправляю и улучшаю
+					Пишу обработки на загрузку прайсов от поставщиков в 1С, также исправляю и улучшаю
 					функционал в общем, чтобы он был максимально удобен пользователю!
 				</p>
 				<div class="btn-wrapper">
@@ -111,23 +111,90 @@
 			</section>
 			<section class="skills_images">
 				<div class="skills-block">
-					<div class="skills_img-bg"><img class="skills_img-img" src="assets/photo//skills/css3.png" alt=""></div>
-					<div class="skills_img-bg"><img class="skills_img-img" src="assets/photo//skills/html.png" alt=""></div>
-					<div class="skills_img-bg"><img class="skills_img-img" src="assets/photo//skills/js.png" alt=""> </div>
-					<div class="skills_img-bg"><img class="skills_img-img" src="assets/photo//skills/php.png" alt=""> </div>
-					<div class="skills_img-bg"> <img class="skills_img-img" src="assets/photo//skills/git.png" alt=""></div>
-					<div class="skills_img-bg"> <img class="skills_img-img" src="assets/photo//skills/github.png" alt=""></div>
+					<div class="skills_img-bg"><img class="skills_img-img" src="assets/photo//skills/css3.png" alt="">
+					</div>
+					<div class="skills_img-bg"><img class="skills_img-img" src="assets/photo//skills/html.png" alt="">
+					</div>
+					<div class="skills_img-bg"><img class="skills_img-img" src="assets/photo//skills/js.png" alt="">
+					</div>
+					<div class="skills_img-bg"><img class="skills_img-img" src="assets/photo//skills/php.png" alt="">
+					</div>
+					<div class="skills_img-bg"> <img class="skills_img-img" src="assets/photo//skills/git.png" alt="">
+					</div>
+					<div class="skills_img-bg"> <img class="skills_img-img" src="assets/photo//skills/github.png"
+							alt=""></div>
 				</div>
 				<div class="skills-block skills-block__position">
-					<div class="skills_img-bg"><img class="skills_img-img" src="assets/photo//skills/photoshop.png" alt=""></div>
-					<div class="skills_img-bg"><img class="skills_img-img" src="assets/photo//skills/1C.png" alt=""></div>
-					<div class="skills_img-bg"><img class="skills_img-img" src="assets/photo//skills/wordpress.png" alt=""> </div>
-					<div class="skills_img-bg"><img class="skills_img-img" src="assets/photo//skills/sass.png" alt=""></div>
-					<div class="skills_img-bg"><img class="skills_img-img" src="assets/photo//skills/SQL.svg" alt="" width="65px"></div>	
+					<div class="skills_img-bg"><img class="skills_img-img" src="assets/photo//skills/photoshop.png"
+							alt=""></div>
+					<div class="skills_img-bg"><img class="skills_img-img" src="assets/photo//skills/1C.png" alt="">
+					</div>
+					<div class="skills_img-bg"><img class="skills_img-img" src="assets/photo//skills/wordpress.png"
+							alt=""> </div>
+					<div class="skills_img-bg"><img class="skills_img-img" src="assets/photo//skills/sass.png" alt="">
+					</div>
+					<div class="skills_img-bg"><img class="skills_img-img" src="assets/photo//skills/SQL.svg" alt=""
+							width="65px"></div>
 				</div>
 
 			</section>
 		</div>
+
+		<section class="my-works">
+			<h2 class="my-works_title">Мои работы</h2>
+			<p class="my-works_featured">Избранные работы</p>
+			<ul class="tabs">
+				<li class="tab"><a class="tab-link tab-link__active" href="">Веб-сайты</a></li>
+				<li class="tab"><a class="tab-link" href="">Дизайн</a></li>
+				<li class="tab"><a class="tab-link" href="">1С-программирование</a></li>
+			</ul>
+			<div class="my-works_videos-wrapper">
+				<ul class="my-works_videos">
+					<li class="my-works_video-wrappper">
+						<video autoplay muted loop id="my-works_video">
+							<source src="assets/video/my-works/dogs.mp4" type="video/mp4">
+							Your browser does not support HTML5 video.
+						</video>
+					</li>
+					<li class="my-works_video-wrappper">
+						<video autoplay muted loop id="my-works_video">
+							<source src="assets/video/my-works/fasad.mp4" type="video/mp4">
+							Your browser does not support HTML5 video.
+						</video>
+					</li>
+					<li class="my-works_video-wrappper">
+						<video autoplay muted loop id="my-works_video">
+							<source src="assets/video/my-works/mikron.mp4" type="video/mp4">
+							Your browser does not support HTML5 video.
+						</video>
+					</li>
+					<li class="my-works_video-wrappper">
+						<video autoplay muted loop id="my-works_video">
+							<source src="assets/video/my-works/portfolio.mp4" type="video/mp4">
+							Your browser does not support HTML5 video.
+						</video>
+					</li>
+					<li class="my-works_video-wrappper">
+						<video autoplay muted loop id="my-works_video">
+							<source src="assets/video/my-works/rpz.mp4" type="video/mp4">
+							Your browser does not support HTML5 video.
+						</video>
+					</li>
+					<li class="my-works_video-wrappper">
+						<video autoplay muted loop id="my-works_video">
+							<source src="assets/video/my-works/sklu.net.mp4" type="video/mp4">
+							Your browser does not support HTML5 video.
+						</video>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<!-- Дизайн -->
+			</div>
+			<div>
+				<!-- 1С-программирование -->
+			</div>
+		</section>
 	</main>
 	<script src="assets/js/main.js"></script>
 </body>
