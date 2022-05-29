@@ -294,6 +294,11 @@ p {
 	line-height: 3rem;
 }
 
+.about-me_link {
+	text-decoration: none;
+	color: rgb(70, 172, 240);
+}
+
 .about-me_subtitle {
 	font-size: 4.8rem;
 }
