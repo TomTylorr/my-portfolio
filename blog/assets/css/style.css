@@ -264,8 +264,8 @@ p {
 		min-width: auto;
 	}
 
-	.post {
-
+	.aside-items {
+		justify-content: center;
 	}
 
 	.aside_title {
@@ -294,5 +294,9 @@ p {
 
 	.one-post_text {
 		font-size: 1.4rem;
+	}
+
+	.footer_date {
+		text-align: center;
 	}
 }
