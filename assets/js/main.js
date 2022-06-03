@@ -27,3 +27,37 @@ function typeText2() {
 
 typeText2();
 
+const designContents = document.querySelector('.tabs');
+const content = document.querySelector('.my-works_videos-wrapper').children;
+
+let currentElement;
+designContents.addEventListener('click', function (e) {
+
+	let list = designContents.children;
+	let length = list.length;
+
+	if (e.target.classList.contains('tab-link')) {
+
+		let tab = e.target;
+
+		for (let i = 0; i < length; i++) {
+			let listElement = list[i].firstChild;
+			if (listElement.classList.contains("tab-link__active")){
+				listElement.classList.remove("tab-link__active")
+			}
+			content[i].classList.add("display-none")	
+		}
+
+		let currentDataAtr = tab.dataset.content;
+
+		for (let i = 0; i < length; i++) {
+			if (content[i].classList.contains(currentDataAtr)){
+				content[i].classList.remove("display-none");
+			}	
+		}
+
+		currentElement = e.target;
+		currentElement.classList.add("tab-link__active");
+	}
+});
+	

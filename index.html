@@ -82,7 +82,11 @@
 			<div class="about-me_description">
 				<h2 class="about-me_title">Кто Я</h2>
 				<p class="about-me_subtitle">Обо мне</p>
-				<p class="about-me_text">Инженер-программист с 6 летним опытом работы в создании сайтов и 1С-программировании.  Работаю и живу в Республики Беларусь. В рабочее время занимаюсь 1С: Управление Торговлей редакции 10.4 "обычное" приложение. Пишу обработки загрузки прайсов поставщиков, также улучшаю текущий функционал программы. В свободное время развиваю Блог о программировании <a  class="about-me_link" href="blog/blog.html"> Перейти к Блогу</a>.
+				<p class="about-me_text">Инженер-программист с 6 летним опытом работы в создании сайтов и
+					1С-программировании. Работаю и живу в Республики Беларусь. В рабочее время занимаюсь 1С: Управление
+					Торговлей редакции 10.4 "обычное" приложение. Пишу обработки загрузки прайсов поставщиков, также
+					улучшаю текущий функционал программы. В свободное время развиваю Блог о программировании <a
+						class="about-me_link" href="blog/blog.html"> Перейти к Блогу</a>.
 				</p>
 				<div class="btn-wrapper">
 					<button class="btn">Написать мне</button>
@@ -139,55 +143,80 @@
 			<h2 class="my-works_title">Мои работы</h2>
 			<p class="my-works_featured">Избранные работы</p>
 			<ul class="tabs">
-				<li class="tab"><a class="tab-link tab-link__active" href="">Веб-сайты</a></li>
-				<li class="tab"><a class="tab-link" href="">Дизайн</a></li>
-				<li class="tab"><a class="tab-link" href="">1С-программирование</a></li>
+				<li class="tab"><a class="tab-link tab-link__active" data-content="my-works_videos" >Веб-сайты</a></li>
+				<li class="tab"><a class="tab-link" data-content="my-works_design">Дизайн</a></li>
+				<li class="tab"><a class="tab-link" data-content="my-works_1C">1С-программирование</a></li>
 			</ul>
-			<div class="my-works_videos-wrapper">
-				<ul class="my-works_videos">
-					<li class="my-works_video-wrappper">
-						<video autoplay muted loop id="my-works_video">
-							<source src="assets/video/my-works/dogs.mp4" type="video/mp4">
-							Your browser does not support HTML5 video.
-						</video>
-					</li>
-					<li class="my-works_video-wrappper">
-						<video autoplay muted loop id="my-works_video">
-							<source src="assets/video/my-works/fasad.mp4" type="video/mp4">
-							Your browser does not support HTML5 video.
-						</video>
-					</li>
-					<li class="my-works_video-wrappper">
-						<video autoplay muted loop id="my-works_video">
-							<source src="assets/video/my-works/mikron.mp4" type="video/mp4">
-							Your browser does not support HTML5 video.
-						</video>
-					</li>
-					<li class="my-works_video-wrappper">
-						<video autoplay muted loop id="my-works_video">
-							<source src="assets/video/my-works/portfolio.mp4" type="video/mp4">
-							Your browser does not support HTML5 video.
-						</video>
-					</li>
-					<li class="my-works_video-wrappper">
-						<video autoplay muted loop id="my-works_video">
-							<source src="assets/video/my-works/rpz.mp4" type="video/mp4">
-							Your browser does not support HTML5 video.
-						</video>
-					</li>
-					<li class="my-works_video-wrappper">
-						<video autoplay muted loop id="my-works_video">
-							<source src="assets/video/my-works/sklu.net.mp4" type="video/mp4">
-							Your browser does not support HTML5 video.
-						</video>
-					</li>
-				</ul>
-			</div>
-			<div>
-				<!-- Дизайн -->
-			</div>
-			<div>
-				<!-- 1С-программирование -->
+			<div class="my-works_content">
+				<div class="my-works_videos-wrapper">
+					<ul class="my-works_videos">
+						<li class="my-works_video-wrappper">
+							<video autoplay muted loop id="my-works_video">
+								<source src="assets/video/my-works/dogs.mp4" type="video/mp4">
+								Your browser does not support HTML5 video.
+							</video>
+						</li>
+						<li class="my-works_video-wrappper">
+							<video autoplay muted loop id="my-works_video">
+								<source src="assets/video/my-works/fasad.mp4" type="video/mp4">
+								Your browser does not support HTML5 video.
+							</video>
+						</li>
+						<li class="my-works_video-wrappper">
+							<video autoplay muted loop id="my-works_video">
+								<source src="assets/video/my-works/mikron.mp4" type="video/mp4">
+								Your browser does not support HTML5 video.
+							</video>
+						</li>
+						<li class="my-works_video-wrappper">
+							<video autoplay muted loop id="my-works_video">
+								<source src="assets/video/my-works/portfolio.mp4" type="video/mp4">
+								Your browser does not support HTML5 video.
+							</video>
+						</li>
+						<li class="my-works_video-wrappper">
+							<video autoplay muted loop id="my-works_video">
+								<source src="assets/video/my-works/rpz.mp4" type="video/mp4">
+								Your browser does not support HTML5 video.
+							</video>
+						</li>
+						<li class="my-works_video-wrappper">
+							<video autoplay muted loop id="my-works_video">
+								<source src="assets/video/my-works/sklu.net.mp4" type="video/mp4">
+								Your browser does not support HTML5 video.
+							</video>
+						</li>
+					</ul>
+					<div class="my-works_design display-none">
+						<ul class="my-works_design">
+							<li class="my-works_design_item">
+								<img class="my-works_design_img" src="assets/photo/design/katalog.jpg" alt="">
+							</li>
+							<li class="my-works_design_item">
+								<img class="my-works_design_img" src="assets/photo/design/monte-group-price.jpg" alt="">
+							</li>
+							<li class="my-works_design_item">
+								<img class="my-works_design_img" src="assets/photo/design/price.jpg" alt="">
+							</li>
+							<li class="my-works_design_item">
+								<img class="my-works_design_img" src="assets/photo/design/reklama-door.jpg" alt="">
+							</li>
+							<li class="my-works_design_item">
+								<img class="my-works_design_img" src="assets/photo/design/social-media.jpg" alt="">
+							</li>
+							<li class="my-works_design_item">
+								<img class="my-works_design_img" src="assets/photo/design/ukrain-mail.jpg" alt="">
+							</li>
+						</ul>
+	
+					</div>
+					<div class="my-works_1C display-none">
+	
+						<h2>Здесь будут работы по 1С-программированию</h2>
+	
+					</div>
+				</div>
+
 			</div>
 		</section>
 	</main>

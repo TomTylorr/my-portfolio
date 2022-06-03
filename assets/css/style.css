@@ -26,6 +26,10 @@ p {
 	padding: 0;
 }
 
+.display-none {
+	display: none !important;
+}
+
 #myVideo {
 	width: 100vw;
 	height: 100%;
@@ -420,6 +424,7 @@ p {
 
 .tab-link:hover {
 	color: #ffb742;
+	cursor: pointer;
 }
 
 .tab-link__active {
@@ -454,6 +459,30 @@ p {
 	height: 100%;
 	object-fit: cover;
 }
+
+.my-works_design {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 40px;
+}
+
+.my-works_design_item {
+	max-width: 25%;
+	/* border: 1px solid black; */
+	box-shadow: #212529;
+}
+
+.my-works_design_img {
+	width: 100%;
+	height: auto;
+}
+
+.my-works_1C {
+	min-height: 400px;
+}
+
+
 
 @media (max-width: 1380px) {
 	.my-works_video-wrappper {
@@ -628,6 +657,8 @@ p {
 	.my-works_videos-wrapper {
 		padding-top: 0;
 	}
+
+
 
 	.skills_description_subtitle {
 		font-size: 2.8rem;
