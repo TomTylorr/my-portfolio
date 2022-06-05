@@ -63,6 +63,43 @@ p {
 	border-radius: 80px;
 }
 
+.logo {
+	width: 120px;
+} 
+
+.logo:hover {
+	cursor:pointer;
+	animation: logoscale 0.8s ease-in-out infinite ;
+}
+
+@keyframes logoscale{
+	0%    { transform: scale(1.0);
+			-webkit-transform: scale(1.0);
+	}
+	20%   { transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+	}
+  }
+
+@media (max-width: 1000px) {
+	.container {
+		margin-top: 10px;
+	}
+
+	.navigation {
+		padding-top: 0;
+	}
+
+	.logo-wrapper {
+		display: flex;
+		justify-content: center;
+	}
+
+	.nav-item {
+		padding-right: 0;
+	}
+}
+
 .header_about-body-name {
 	display: flex;
 }
@@ -113,6 +150,12 @@ p {
 
 .nav-item {
 	padding-right: 25px;
+}
+
+@media (max-width: 1000px) {
+	.nav-item {
+		padding-right: 0;
+	}
 }
 
 .nav-items_link:hover {
