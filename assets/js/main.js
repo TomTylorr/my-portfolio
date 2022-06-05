@@ -60,4 +60,7 @@ designContents.addEventListener('click', function (e) {
 		currentElement.classList.add("tab-link__active");
 	}
 });
+
+
+
 	
