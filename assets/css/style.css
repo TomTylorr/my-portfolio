@@ -543,8 +543,8 @@ p {
 }
 
 .hobby {
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 120px;
+	padding-bottom: 120px;
 }
 
 .hobby_content {
@@ -576,24 +576,12 @@ p {
 	-webkit-transform-origin: top left;
 	transform: rotate(5deg);
 	-webkit-transform: rotate(5deg);
-
 }
 
 .hobby_img:hover {
-	/* animation: rotateImg 5s ease-in-out infinite; */
+	transition: 1s;
 	transform: rotate(0deg);
 	-webkit-transform: rotate(0deg);
-}
-
-@keyframes rotateImg {
-	0% {
-		transform-origin: top left;
-		-webkit-transform-origin: top left;
-	}
-	15% {
-		transform: rotate(10deg);
-		-webkit-transform: rotate(10deg);
-	}
 }
 
 .hobby_img-text {
@@ -836,4 +824,120 @@ p {
 	.nav-item {
 		padding-right: 0;
 	}
+}
+
+.footer {
+	min-height: 340px;
+	background-color: #1C1C1C;
+}
+
+.footer-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 148px;
+	padding-bottom: 80px;
+}
+
+.footer_about-me {
+}
+.footer_about-title {
+	color: #ffb742;
+	font-size: 3.2rem;
+	font-weight: bold;
+	padding-bottom: 30px;
+}
+.footer_about-text {
+	color: #d4d4d4;
+	font-size: 1.6rem;
+	line-height: 3.2rem;
+}
+.footer_usfull-links {
+}
+.footer_usfull-title {
+	color: #f5fbf2;
+	font-size: 2.2rem;
+	padding-bottom: 13px;
+}
+.footer_usfull-items {
+}
+.footer_usfull-item {
+	padding-bottom: 12px;
+}
+.footer_usfull-link {
+	text-decoration: none;
+	color: #7b7b7b;
+	font-size: 1.8rem;
+}
+.footer_social-media {
+}
+.footer_social-media-title {
+	color: #f5fbf2;
+	font-size: 2.2rem;
+	padding-bottom: 13px;
+}
+.footer_social-media-items {
+}
+.footer_social-media-item {
+	padding-bottom: 12px;
+}
+.footer_social-media-link {
+	text-decoration: none;
+	color: #7b7b7b;
+	font-size: 1.8rem;
+}
+.footer_mail {
+}
+.footer_mail-title {
+	color: #f5fbf2;
+	font-size: 2.2rem;
+	padding-bottom: 13px;
+}
+.footer_mail-text {
+	color: #7b7b7b;
+	font-size: 1.8rem;
+	padding-bottom: 31px;
+}
+
+.footer_mail-wrapper-btn-inp {
+	position: relative;
+}
+
+.footer_mail-input {
+	padding: 25px 40px;
+	color: #7C7C7C;
+	font-size: 1.8rem;
+	background-color: #212529;
+	border-radius: 49px;
+	border: none;
+}
+
+.footer_mail-input {
+	cursor: pointer;
+}
+
+.footer_mail-input:focus {
+	cursor: initial;
+}
+
+.footer_mail-btn-wrapper {
+	position: absolute;
+	bottom: 0px;
+	left: 233px;
+
+}
+
+.footer_mail-btn {
+	background-image: url(../photo/submit.png);
+	background-color: #ffb742;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 48px;
+	border: none;
+	width: 64px;
+	height: 64px;
+}
+
+.footer_mail-btn {
+	cursor: pointer;
 }
