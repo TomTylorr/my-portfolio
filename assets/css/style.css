@@ -64,7 +64,7 @@ p {
 }
 
 .logo {
-	width: 120px;
+	width: 140px;
 }
 
 .logo {
@@ -505,19 +505,49 @@ p {
 .my-works_videos {
 	display: flex;
 	flex-wrap: wrap;
-	flex-wrap: wrap;
 	justify-content: center;
 	gap: 15px;
 }
 
 .my-works_video-wrappper {
 	max-width: 30%;
+	position: relative;
 }
 
 #my-works_video {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+
+.my-works_overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 500;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
+.my-works_overlay-title {
+	padding-top: 20px;
+	padding-bottom: 40px;
+	font-size: 2.4rem;
+	color: #ffb742;
+}
+
+.my-works_overlay-text {
+	padding: 0px 5px 40px 5px;
+	font-size: 1.6rem;
+}
+
+.my-works_overlay-link {
+	font-size: 2rem;
 }
 
 .my-works_design {
@@ -528,10 +558,11 @@ p {
 }
 
 .my-works_design_item {
-	max-width: 25%;
-	/* border: 1px solid black; */
+	max-width: 20%;
 	box-shadow: #212529;
+	position: relative;
 }
+
 
 .my-works_design_img {
 	width: 100%;
@@ -572,10 +603,6 @@ p {
 	box-shadow: 3px 3px 1px #ccc;
 	-webkit-box-shadow: 3px 3px 1px #ccc;
 	-moz-box-shadow: 3px 3px 1px #ccc;
-	transform-origin: top left;
-	-webkit-transform-origin: top left;
-	transform: rotate(5deg);
-	-webkit-transform: rotate(5deg);
 }
 
 .hobby_img:hover {
@@ -828,7 +855,7 @@ p {
 
 .footer {
 	min-height: 340px;
-	background-color: #1C1C1C;
+	background-color: #1c1c1c;
 }
 
 .footer-wrapper {
@@ -905,7 +932,7 @@ p {
 
 .footer_mail-input {
 	padding: 25px 40px;
-	color: #7C7C7C;
+	color: #7c7c7c;
 	font-size: 1.8rem;
 	background-color: #212529;
 	border-radius: 49px;
@@ -924,7 +951,6 @@ p {
 	position: absolute;
 	bottom: 0px;
 	left: 233px;
-
 }
 
 .footer_mail-btn {

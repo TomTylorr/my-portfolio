@@ -24,7 +24,7 @@
 		</video> -->
 		<nav class="navigation">
 			<div class="logo-wrapper">
-				<img class="logo" src="assets/photo/robot_5.png" alt="На главную">
+				<img class="logo" src="assets/photo/logo_4.png" alt="На главную">
 			</div>
 			<div class="nav-wrapper">
 				<ul class="nav-items">
@@ -49,7 +49,7 @@
 					<span>&nbsp; &nbsp; &nbsp; </span>
 					<p class="header_about-title__color header_about-title__underline"
 						id="header_about-title__underline-js"></p>
-					<img src="assets/photo/heand.png" width="50" alt="">
+					<!-- <img src="assets/photo/heand.png" width="50" alt=""> -->
 				</div>
 				<p class="header_about-letter">{ Я }</p>
 				<h1 class="header_about-description" id="header_about-description">Инженер-программист</h1>
@@ -88,7 +88,11 @@
 				<h2 class="about-me_title">Кто Я</h2>
 				<p class="about-me_subtitle">Обо мне</p>
 				<p class="about-me_text">Меня зовут Дмитрий, живу и работаю в Республики Беларусь, г.Лида.
-					3 года проработал в компании как специлист широкого профиля (по трудовой "специалист по сетям и базам данных") : делал сайты, занимался разработкой рекламной продукции, чинил компьютеры пользователей, настраивал программы и т.д. Сейчас 3 месяца работаю инженером-программистом. Занимаюсь доработкой 1С 8.3 Управление Торговлей редакции 10.4 "обычное приложение". В свободное время занимаюсь веб-разработкой.
+					3 года проработал в компании как специлист широкого профиля (по трудовой "специалист по сетям и
+					базам данных") : делал сайты, занимался разработкой рекламной продукции, чинил компьютеры
+					пользователей, настраивал программы и т.д. Сейчас 3 месяца работаю инженером-программистом.
+					Занимаюсь доработкой 1С 8.3 Управление Торговлей редакции 10.4 "обычное приложение". В свободное
+					время продолжаю заниматься веб-разработкой (веду парочку проектов).
 				</p>
 				<div class="btn-wrapper">
 					<button class="btn">Написать мне</button>
@@ -103,7 +107,8 @@
 					Какими инструментами и языками программирования <br> я владею?
 				</h2>
 				<blockquote class="skills_description_more">
-					PHP (курс от Hexlet, Книги: Люк Веллинг "Разработка веб-приложений", Мэт Занстра "Объекты, шаблоны и методики программировани") , JS (учился на курсах от EPAM, прошёл PRE-курс и половину  1 stage), CSS, HTML, WordPress + WooCommerce (поставил 3 сайта), 1C-Bitrix (работал с "Аспро", в основном как контент менеджер, пробовал ставить шаблон интернет-магазина), Laravel (базовое понимание). Знаю Английский на уровне pre-intermediate, есть сертификат (опыт реального общения на работе 2 года). По JS на CodeWars решил 90 задач. Прочитал книги "Грокаем алгоритмы", "Совершенный код".
+					„Обучение - это, на самом деле, когда ты вдруг что-то понимаешь, что ты понимал всю свою жизнь, но
+					иначе.“ — Дорис Лессинг
 				</blockquote>
 				<div class="btn-wrapper">
 					<button class="btn">Написать мне</button>
@@ -144,44 +149,45 @@
 			<h2 class="my-works_title">Мои работы</h2>
 			<p class="my-works_featured">Избранные работы</p>
 			<ul class="tabs">
-				<li class="tab"><a class="tab-link tab-link__active" data-content="my-works_videos">Веб-сайты</a></li>
+				<li class="tab"><a class="tab-link tab-link__active" data-content="my-works_1C">1С-программирования</a></li>
+				<li class="tab"><a class="tab-link" data-content="my-works_videos">Веб-сайты</a></li>
 				<li class="tab"><a class="tab-link" data-content="my-works_design">Дизайн</a></li>
-				<li class="tab"><a class="tab-link" data-content="my-works_1C">1С-программирования</a></li>
 			</ul>
 			<div class="my-works_content">
 				<div class="my-works_videos-wrapper">
-					<ul class="my-works_videos">
-						<li class="my-works_video-wrappper">
-							<video autoplay muted loop id="my-works_video">
-								<source src="assets/video/my-works/dogs.mp4" type="video/mp4">
+					<ul class="my-works_videos display-none">
+						<li class="my-works_video-wrappper" id="video1">
+							<video class="flip-card-front" autoplay muted loop id="my-works_video">
+								<source class="my-works_video-source" src="assets/video/my-works/dogs.mp4"
+									type="video/mp4">
 								Your browser does not support HTML5 video.
 							</video>
 						</li>
-						<li class="my-works_video-wrappper">
+						<li class="my-works_video-wrappper" id="video2">
 							<video autoplay muted loop id="my-works_video">
 								<source src="assets/video/my-works/fasad.mp4" type="video/mp4">
 								Your browser does not support HTML5 video.
 							</video>
 						</li>
-						<li class="my-works_video-wrappper">
+						<li class="my-works_video-wrappper" id="video3">
 							<video autoplay muted loop id="my-works_video">
 								<source src="assets/video/my-works/mikron.mp4" type="video/mp4">
 								Your browser does not support HTML5 video.
 							</video>
 						</li>
-						<li class="my-works_video-wrappper">
+						<li class="my-works_video-wrappper" id="video4">
 							<video autoplay muted loop id="my-works_video">
 								<source src="assets/video/my-works/portfolio.mp4" type="video/mp4">
 								Your browser does not support HTML5 video.
 							</video>
 						</li>
-						<li class="my-works_video-wrappper">
+						<li class="my-works_video-wrappper" id="video5">
 							<video autoplay muted loop id="my-works_video">
 								<source src="assets/video/my-works/rpz.mp4" type="video/mp4">
 								Your browser does not support HTML5 video.
 							</video>
 						</li>
-						<li class="my-works_video-wrappper">
+						<li class="my-works_video-wrappper" id="video6">
 							<video autoplay muted loop id="my-works_video">
 								<source src="assets/video/my-works/sklu.net.mp4" type="video/mp4">
 								Your browser does not support HTML5 video.
@@ -189,47 +195,85 @@
 						</li>
 					</ul>
 					<div class="my-works_design display-none">
-						<ul class="my-works_design">
-							<li class="my-works_design_item">
-								<img class="my-works_design_img" src="assets/photo/design/katalog.jpg" alt="">
+						<ul class="my-works_design my-works_design-items">
+							<li class="my-works_design_item" id="photo-desing1">
+								<img class="my-works_design_img" id="my-works_design_img" src="assets/photo/design/katalog.jpg" alt="">
 							</li>
-							<li class="my-works_design_item">
-								<img class="my-works_design_img" src="assets/photo/design/monte-group-price.jpg" alt="">
+							<li class="my-works_design_item" id="photo-desing2">
+								<img class="my-works_design_img" id="my-works_design_img" src="assets/photo/design/monte-group-price.jpg" alt="">
 							</li>
-							<li class="my-works_design_item">
-								<img class="my-works_design_img" src="assets/photo/design/price.jpg" alt="">
+							<li class="my-works_design_item" id="photo-desing3">
+								<img class="my-works_design_img" id="my-works_design_img" src="assets/photo/design/price.jpg" alt="">
 							</li>
-							<li class="my-works_design_item">
-								<img class="my-works_design_img" src="assets/photo/design/reklama-door.jpg" alt="">
+							<li class="my-works_design_item" id="photo-desing4">
+								<img class="my-works_design_img" id="my-works_design_img" src="assets/photo/design/poland_offer.jpg" alt="">
 							</li>
-							<li class="my-works_design_item">
-								<img class="my-works_design_img" src="assets/photo/design/social-media.jpg" alt="">
+							<li class="my-works_design_item" id="photo-desing5">
+								<img class="my-works_design_img" id="my-works_design_img" src="assets/photo/design/hair.jpg" alt="">
 							</li>
-							<li class="my-works_design_item">
-								<img class="my-works_design_img" src="assets/photo/design/ukrain-mail.jpg" alt="">
+							<li class="my-works_design_item" id="photo-desing6">
+								<img class="my-works_design_img" id="my-works_design_img" src="assets/photo/design/visitka.jpg" alt="">
+							</li>
+							<li class="my-works_design_item" id="photo-desing7">
+								<img class="my-works_design_img" id="my-works_design_img" src="assets/photo/design/stand_protect.jpg" alt="">
+							</li>
+							<li class="my-works_design_item" id="photo-desing8">
+								<img class="my-works_design_img" id="my-works_design_img" src="assets/photo/design/social-media.jpg" alt="">
+							</li>
+							<li class="my-works_design_item" id="photo-desing9">
+								<img class="my-works_design_img"  id="my-works_design_img" src="assets/photo/design/vistavka.jpg" alt="">
+							</li>
+							<li class="my-works_design_item" id="photo-desing10">
+								<img class="my-works_design_img"  id="my-works_design_img" src="assets/photo/design/send_mail.jpg" alt="">
+							</li>
+							<li class="my-works_design_item" id="photo-desing11">
+								<img class="my-works_design_img" id="my-works_design_img" src="assets/photo/design/logo_3.jpg" alt="">
+							</li>
+							<li class="my-works_design_item" id="photo-desing12">
+								<img class="my-works_design_img" id="my-works_design_img" src="assets/photo/design/social-media2.jpg" alt="">
+							</li>
+							<li class="my-works_design_item" id="photo-desing13">
+								<img class="my-works_design_img" id="my-works_design_img" src="assets/photo/design/reklama-door.jpg" alt="">
+							</li>
+
+							<li class="my-works_design_item" id="photo-desing14">
+								<img class="my-works_design_img" id="my-works_design_img" src="assets/photo/design/logo_rpz.jpg" alt="">
+							</li>
+							<li class="my-works_design_item" id="photo-desing15">
+								<img class="my-works_design_img" id="my-works_design_img" src="assets/photo/design/logo_2.jpg" alt="">
+							</li>
+
+							<li class="my-works_design_item" id="photo-desing16">
+								<img class="my-works_design_img" id="my-works_design_img" src="assets/photo/design/facebook.jpg" alt="">
 							</li>
 						</ul>
 
 					</div>
-					<div class="my-works_1C display-none">
+					<div class="my-works_1C">
 						<div class="my-works_videos-wrapper">
-							<ul class="my-works_videos">
-								<li class="my-works_video-wrappper">
+							<ul class="my-works_videos my-works_videos1C">
+								<li class="my-works_video-wrappper" id="video1c_1">
 									<video autoplay muted loop id="my-works_video">
 										<source src="assets/video/my-works/1с/price.mp4" type="video/mp4">
 										Your browser does not support HTML5 video.
 									</video>
 								</li>
-								<li class="my-works_video-wrappper">
+								<li class="my-works_video-wrappper" id="video1c_2">
 									<video autoplay muted loop id="my-works_video">
 										<source src="assets/video/my-works/1с/task.mp4" type="video/mp4">
 										Your browser does not support HTML5 video.
 									</video>
 								</li>
+						</div>
+					</div>
+					<div class="my-works_overlay display-none">
+						<div class="my-works_overlay">
+							<p class="my-works_overlay-title">Учебный проект</p>
+							<p class="my-works_overlay-text">CSS, HTML, JS, FlexBox, Grid</p>
+							<a class="my-works_overlay-link" href="№" target="_blank">Ссылка</a>
+						</div>
 					</div>
 				</div>
-
-			</div>
 		</section>
 
 		<section class="hobby" id="hobby">
