@@ -563,7 +563,6 @@ p {
 	position: relative;
 }
 
-
 .my-works_design_img {
 	width: 100%;
 	height: auto;
@@ -768,64 +767,6 @@ p {
 	}
 }
 
-@media (max-width: 600px) {
-	.hobby_img-wrapper {
-		width: auto;
-	}
-
-	.my-works_video-wrappper {
-	}
-
-	.skills_img-bg {
-	}
-
-	.skills_img-img {
-	}
-
-	.header_about {
-		width: 100%;
-	}
-
-	.header_about-description {
-		font-size: 2.6rem;
-	}
-
-	.header_about-title-js {
-		width: 100%;
-		font-size: 2rem;
-		text-align: center;
-		padding-bottom: 20px;
-	}
-
-	.tabs {
-		flex-wrap: wrap;
-		flex-direction: column;
-		justify-content: center;
-	}
-
-	.tab {
-		margin: 0 auto;
-		padding-bottom: 40px;
-	}
-
-	.my-works_videos-wrapper {
-		padding-top: 0;
-	}
-
-	.skills_description_subtitle {
-		font-size: 2.8rem;
-	}
-
-	.skills_description_more {
-		margin: 0 auto;
-		padding: 15px 0;
-	}
-
-	.skills_description_more {
-		text-align: center;
-	}
-}
-
 @media (max-width: 400px) {
 	.container {
 		padding: 0 10px;
@@ -866,8 +807,6 @@ p {
 	padding-bottom: 80px;
 }
 
-.footer_about-me {
-}
 .footer_about-title {
 	color: #ffb742;
 	font-size: 3.2rem;
@@ -966,4 +905,94 @@ p {
 
 .footer_mail-btn {
 	cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+	.hobby {
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+
+	.hobby_img-wrapper {
+		width: auto;
+	}
+
+	.my-works_video-wrappper {
+	}
+
+	.skills_img-bg {
+	}
+
+	.skills_img-img {
+	}
+
+	.header_about {
+		width: 100%;
+	}
+
+	.header_about-description {
+		font-size: 2.6rem;
+	}
+
+	.header_about-title-js {
+		width: 100%;
+		font-size: 2rem;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+
+	.tabs {
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.tab {
+		margin: 0 auto;
+		padding-bottom: 40px;
+	}
+
+	.my-works_videos-wrapper {
+		padding-top: 0;
+	}
+
+	.skills_description_subtitle {
+		font-size: 2.8rem;
+	}
+
+	.skills_description_more {
+		margin: 0 auto;
+		padding: 15px 0;
+	}
+
+	.skills_description_more {
+		text-align: center;
+	}
+
+	.footer-wrapper {
+		padding-top: 40px;
+	}
+
+	.my-works {
+		padding-top: 0;
+	}
+
+	.footer_about-me {
+		margin: 0 auto;
+	}
+
+	.footer_usfull-links {
+		margin: 0 auto;
+	}
+
+	.footer_social-media {
+		margin: 0 auto;
+	}
+
+	.footer_mail {
+		margin: 0 auto;
+		text-align: center;
+	}
+
 }
