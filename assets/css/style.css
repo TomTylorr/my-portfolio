@@ -1140,9 +1140,19 @@ p {
 	.modal-content {
 		width: 100%;
 	}
+
+	.modal-content-main {
+		height: 100%;
+	}
 }
 
 @media (max-width: 450px) {
+	.modal-content-main {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
 	.modal-table {
 		font-size: 1.4rem;
 	}
