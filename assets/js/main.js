@@ -152,7 +152,6 @@ let data = {
 
 const modal = document.getElementById("myModal");
 const mainBtn = document.getElementById("mainBtn");
-const mainBtn2 = document.getElementById("mainBtn2");
 const span = document.getElementsByClassName("close")[0];
 
 mainBtn.onclick = function () {
@@ -169,32 +168,11 @@ window.onclick = function (e) {
 	}
 }
 
-mainBtn2.onclick = function () {
-	modal.style.display = "block";
-}
-
-span.onclick = function () {
-	modal.style.display = "none";
-}
-
-window.onclick = function (e) {
-	if (e.target == modal) {
-		modal.style.display = "none";
-	}
-}
 
 mainBtn3.onclick = function () {
 	modal.style.display = "block";
 }
 
-span.onclick = function () {
-	modal.style.display = "none";
-}
 
-window.onclick = function (e) {
-	if (e.target == modal) {
-		modal.style.display = "none";
-	}
-}
 
 
