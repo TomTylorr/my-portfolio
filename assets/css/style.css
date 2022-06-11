@@ -1089,6 +1089,7 @@ p {
 }
 
 .modal-table {
+	border-collapse: collapse;
 	margin: 0 auto;
 	border: 1px solid black;
 	text-align: center;
@@ -1141,6 +1142,17 @@ p {
 	}
 }
 
+@media (max-width: 450px) {
+	.modal-table {
+		font-size: 1.4rem;
+	}
+
+	.modal-body {
+		padding: 0;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
 
 @keyframes animatetop {
 	from {top: -300px; opacity: 0}
