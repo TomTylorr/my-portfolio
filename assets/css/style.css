@@ -500,6 +500,7 @@ p {
 
 .my-works_videos-wrapper {
 	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .my-works_videos {
@@ -626,6 +627,10 @@ p {
 	.my-works_design_item {
 		max-width: none;
 		padding: 0px 10px;
+	}
+
+	.my-works_videos-wrapper {
+		padding-bottom: 0;
 	}
 }
 
@@ -1017,6 +1022,13 @@ p {
 	cursor:pointer;
 }
 
+.close2:hover,
+.close2:focus {
+	color: black;
+	text-decoration: none;
+	cursor:pointer;
+}	
+
 .modal-header {
 	display: flex;
 	flex-wrap: wrap;
@@ -1036,6 +1048,18 @@ p {
 	padding-left: 50px;
 }
 
+.close2 {
+	color: #fff;
+	font-size: 15rem;
+	font-weight: bold;
+	line-height: 0.3;
+	padding-left: 50px;
+}
+
+.modal-table_subtitle {
+	background-color:#ccc;
+}
+
 @media (max-width: 1650px) {
 	.close {
 		padding-top: 20px;
@@ -1043,6 +1067,15 @@ p {
 	}
 
 	.close {
+		padding-left: 0;
+	}
+
+	.close2 {
+		padding-top: 20px;
+		padding-bottom: 5px;
+	}
+
+	.close2 {
 		padding-left: 0;
 	}
 	
