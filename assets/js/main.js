@@ -78,7 +78,7 @@ myWorksVideos.addEventListener('mouseover', function (e) {
 		videoCurrentID = e.target.offsetParent.id;
 		videoCurrent = document.getElementById(videoCurrentID)
 		mouseover(videoCurrent);
-		myWorksOverlayLink.classList.remove("display-none");		
+		myWorksOverlayLink.classList.remove("display-none");
 	}
 });
 
@@ -91,7 +91,7 @@ myWorksVideos1C.addEventListener('mouseover', function (e) {
 		videoCurrentID = e.target.offsetParent.id;
 		videoCurrent = document.getElementById(videoCurrentID)
 		mouseover(videoCurrent);
-		myWorksOverlayLink.classList.add("display-none");	
+		myWorksOverlayLink.classList.add("display-none");
 	}
 });
 
@@ -105,7 +105,7 @@ myWorksDesign.addEventListener('mouseover', function (e) {
 		videoCurrentID = e.target.parentElement.id;
 		videoCurrent = document.getElementById(videoCurrentID)
 		mouseover(videoCurrent);
-		myWorksOverlayLink.classList.add("display-none");		
+		myWorksOverlayLink.classList.add("display-none");
 	}
 });
 
@@ -147,10 +147,54 @@ let data = {
 	"photo-desing14": ['Логотип', "Логотип для производственной фирмы", "вавав"],
 	"photo-desing15": ['Логотип', "Логотип для фирмы в Украину", "вавав"],
 	"photo-desing16": ['Шапка в FaceBook', "Шапка для группы в FaceBook", "вавав"]
-} 
+}
 
 
+const modal = document.getElementById("myModal");
+const mainBtn = document.getElementById("mainBtn");
+const mainBtn2 = document.getElementById("mainBtn2");
+const span = document.getElementsByClassName("close")[0];
 
+mainBtn.onclick = function () {
+	modal.style.display = "block";
+}
 
+span.onclick = function () {
+	modal.style.display = "none";
+}
+
+window.onclick = function (e) {
+	if (e.target == modal) {
+		modal.style.display = "none";
+	}
+}
+
+mainBtn2.onclick = function () {
+	modal.style.display = "block";
+}
+
+span.onclick = function () {
+	modal.style.display = "none";
+}
+
+window.onclick = function (e) {
+	if (e.target == modal) {
+		modal.style.display = "none";
+	}
+}
+
+mainBtn3.onclick = function () {
+	modal.style.display = "block";
+}
+
+span.onclick = function () {
+	modal.style.display = "none";
+}
+
+window.onclick = function (e) {
+	if (e.target == modal) {
+		modal.style.display = "none";
+	}
+}
 
 

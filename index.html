@@ -40,9 +40,44 @@
 				<p class="phone-number">+375 (44) 700-66-93 <span class="phone-number-icon"></span></p>
 			</div>
 			<div class="btn-wrapper btn-wrapper-header">
-				<button class="btn">Написать мне</button>
+				<button class="btn" id="mainBtn">Прайс-лист</button>
 			</div>
 		</nav>
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2>1С-программирования && Веб-разработка && Дизайн</h2>
+					<span class="close">&times;</span>
+				</div>
+				<div class="modal-body">
+					<table class="modal-table">
+						<caption class="modal-table_caption">Прайс-лист</caption>
+						<tr>
+							<th>Пакет услуг</th>
+							<th>Цена (BYN)</th>
+						</tr>
+						<tr>
+							<td>Сопровождение сайта + социальные сети</td>
+							<td>от 500</td>
+						</tr>
+						<tr>
+							<td>Доработка 1С 8.3</td>
+							<td>от 500</td>
+						</tr>
+						<tr>
+							<td>Разработка сайта с 0</td>
+							<td>от 1500</td>
+						</tr>
+					</table>
+					<p class="table-comment">* Минимальный объем работы 1 месяц (21 час)</p>
+				</div>
+				<div class="modal-footer">
+					<p>* Работаю только официально (договор подряда)</p>
+					<p>** За разовые работы не берусь!</p>
+				</div>
+			</div>
+		</div>
+
 		<div class="header_about">
 			<div class="header_about-body">
 				<div class="header_about-body-name">
@@ -96,7 +131,7 @@
 					время продолжаю заниматься веб-разработкой (Опыт изучения веб-разработки с 2016 года).
 				</p>
 				<div class="btn-wrapper">
-					<button class="btn">Написать мне</button>
+					<button class="btn" id="mainBtn2">Прайс-лист</button>
 				</div>
 			</div>
 		</div>
@@ -112,7 +147,7 @@
 					иначе.“ — Дорис Лессинг
 				</blockquote>
 				<div class="btn-wrapper">
-					<button class="btn">Написать мне</button>
+					<button class="btn" id="mainBtn3">Прайс-лист</button>
 				</div>
 			</section>
 			<section class="skills_images">
@@ -141,6 +176,8 @@
 					</div>
 					<div class="skills_img-bg"><img class="skills_img-img" src="assets/photo/skills/sql.svg" alt=""
 							width="65px"></div>
+					<div class="skills_img-bg"><img class="skills_img-img" src="assets/photo/skills/1c_bitrix.png"
+							alt="" width="65px"></div>
 				</div>
 
 			</section>
@@ -150,7 +187,8 @@
 			<h2 class="my-works_title">Мои работы</h2>
 			<p class="my-works_featured">Избранные работы</p>
 			<ul class="tabs">
-				<li class="tab"><a class="tab-link tab-link__active" data-content="my-works_1C">1С-программирования</a></li>
+				<li class="tab"><a class="tab-link tab-link__active" data-content="my-works_1C">1С-программирования</a>
+				</li>
 				<li class="tab"><a class="tab-link" data-content="my-works_videos">Веб-сайты</a></li>
 				<li class="tab"><a class="tab-link" data-content="my-works_design">Дизайн</a></li>
 			</ul>
@@ -198,54 +236,70 @@
 					<div class="my-works_design display-none">
 						<ul class="my-works_design my-works_design-items">
 							<li class="my-works_design_item" id="photo-desing1">
-								<img class="my-works_design_img" id="my-works_design_img" src="assets/photo/design/katalog.jpg" alt="">
+								<img class="my-works_design_img" id="my-works_design_img"
+									src="assets/photo/design/katalog.jpg" alt="">
 							</li>
 							<li class="my-works_design_item" id="photo-desing2">
-								<img class="my-works_design_img" id="my-works_design_img" src="assets/photo/design/monte-group-price.jpg" alt="">
+								<img class="my-works_design_img" id="my-works_design_img"
+									src="assets/photo/design/monte-group-price.jpg" alt="">
 							</li>
 							<li class="my-works_design_item" id="photo-desing3">
-								<img class="my-works_design_img" id="my-works_design_img" src="assets/photo/design/price.jpg" alt="">
+								<img class="my-works_design_img" id="my-works_design_img"
+									src="assets/photo/design/price.jpg" alt="">
 							</li>
 							<li class="my-works_design_item" id="photo-desing4">
-								<img class="my-works_design_img" id="my-works_design_img" src="assets/photo/design/poland_offer.jpg" alt="">
+								<img class="my-works_design_img" id="my-works_design_img"
+									src="assets/photo/design/poland_offer.jpg" alt="">
 							</li>
 							<li class="my-works_design_item" id="photo-desing5">
-								<img class="my-works_design_img" id="my-works_design_img" src="assets/photo/design/hair.jpg" alt="">
+								<img class="my-works_design_img" id="my-works_design_img"
+									src="assets/photo/design/hair.jpg" alt="">
 							</li>
 							<li class="my-works_design_item" id="photo-desing6">
-								<img class="my-works_design_img" id="my-works_design_img" src="assets/photo/design/visitka.jpg" alt="">
+								<img class="my-works_design_img" id="my-works_design_img"
+									src="assets/photo/design/visitka.jpg" alt="">
 							</li>
 							<li class="my-works_design_item" id="photo-desing7">
-								<img class="my-works_design_img" id="my-works_design_img" src="assets/photo/design/stand_protect.jpg" alt="">
+								<img class="my-works_design_img" id="my-works_design_img"
+									src="assets/photo/design/stand_protect.jpg" alt="">
 							</li>
 							<li class="my-works_design_item" id="photo-desing8">
-								<img class="my-works_design_img" id="my-works_design_img" src="assets/photo/design/social-media.jpg" alt="">
+								<img class="my-works_design_img" id="my-works_design_img"
+									src="assets/photo/design/social-media.jpg" alt="">
 							</li>
 							<li class="my-works_design_item" id="photo-desing9">
-								<img class="my-works_design_img"  id="my-works_design_img" src="assets/photo/design/vistavka.jpg" alt="">
+								<img class="my-works_design_img" id="my-works_design_img"
+									src="assets/photo/design/vistavka.jpg" alt="">
 							</li>
 							<li class="my-works_design_item" id="photo-desing10">
-								<img class="my-works_design_img"  id="my-works_design_img" src="assets/photo/design/send_mail.jpg" alt="">
+								<img class="my-works_design_img" id="my-works_design_img"
+									src="assets/photo/design/send_mail.jpg" alt="">
 							</li>
 							<li class="my-works_design_item" id="photo-desing11">
-								<img class="my-works_design_img" id="my-works_design_img" src="assets/photo/design/logo_3.jpg" alt="">
+								<img class="my-works_design_img" id="my-works_design_img"
+									src="assets/photo/design/logo_3.jpg" alt="">
 							</li>
 							<li class="my-works_design_item" id="photo-desing12">
-								<img class="my-works_design_img" id="my-works_design_img" src="assets/photo/design/social-media2.jpg" alt="">
+								<img class="my-works_design_img" id="my-works_design_img"
+									src="assets/photo/design/social-media2.jpg" alt="">
 							</li>
 							<li class="my-works_design_item" id="photo-desing13">
-								<img class="my-works_design_img" id="my-works_design_img" src="assets/photo/design/reklama-door.jpg" alt="">
+								<img class="my-works_design_img" id="my-works_design_img"
+									src="assets/photo/design/reklama-door.jpg" alt="">
 							</li>
 
 							<li class="my-works_design_item" id="photo-desing14">
-								<img class="my-works_design_img" id="my-works_design_img" src="assets/photo/design/logo_rpz.jpg" alt="">
+								<img class="my-works_design_img" id="my-works_design_img"
+									src="assets/photo/design/logo_rpz.jpg" alt="">
 							</li>
 							<li class="my-works_design_item" id="photo-desing15">
-								<img class="my-works_design_img" id="my-works_design_img" src="assets/photo/design/logo_2.jpg" alt="">
+								<img class="my-works_design_img" id="my-works_design_img"
+									src="assets/photo/design/logo_2.jpg" alt="">
 							</li>
 
 							<li class="my-works_design_item" id="photo-desing16">
-								<img class="my-works_design_img" id="my-works_design_img" src="assets/photo/design/facebook.jpg" alt="">
+								<img class="my-works_design_img" id="my-works_design_img"
+									src="assets/photo/design/facebook.jpg" alt="">
 							</li>
 						</ul>
 
